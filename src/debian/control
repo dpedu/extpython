@@ -1,4 +1,4 @@
-Source: extpython-python3.7
+Source: extpython-python${PYTHON_MAJOR}
 Section: unknown
 Priority: optional
 Maintainer: ubuntu <ubuntu@unknown>
@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.4
 Homepage: <insert the upstream URL, if relevant>
 
-Package: extpython-python3.7
+Package: extpython-python${PYTHON_MAJOR}
 Architecture: amd64
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: <insert up to 60 chars description>

@@ -1,12 +1,12 @@
-#!/bin/bash
+#!/bin/bash -eux
 
 # get metadata
-cd /src
-. vars.sh
+ln -s /src/$VARSFILE /tmp/vars.sh
+. /tmp/vars.sh
 
 # install deps
 apt-get update
-DEBIAN_FRONTEND=noninteractive apt-get install -y $CPYTHON_DEPS
+DEBIAN_FRONTEND=noninteractive apt-get install -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" $CPYTHON_DEPS
 
 # run the build
 sudo -Hu builder /build.sh
