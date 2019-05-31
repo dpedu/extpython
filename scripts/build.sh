@@ -15,9 +15,7 @@ cd work
 mkdir cpython
 wget -qO- cpython.tar.gz $PYTHON_TARBALL | tar zxf - -C cpython/ --strip-components=1
 
-# get debian metadata
-# todo generate the metadata here
-# cp -r /src/debian /src/Makefile ./
+# generate debian metadata
 mkdir debian
 export BUILD_DATE=$(date -R)
 template /src/debian/changelog | tee debian/changelog
@@ -32,6 +30,6 @@ time dpkg-buildpackage -us -uc -b
 
 cd ..
 mkdir out
-mv *.buildinfo *.changes *.deb out/
+mv *.deb out/
 cd out
 sha256sum *

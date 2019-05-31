@@ -18,6 +18,11 @@ The vars file - `trusty-3.7.3.sh` above - contains information about what python
 `src/bionic-3.7.3.sh` for an annotated example.
 
 
+Tips:
+
+- Python >=3.8 won't build on trusty because Openssl is too old
+
+
 TODO:
 
 - Parameter for pre-loaded pip modules

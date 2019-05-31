@@ -2,9 +2,9 @@
 
 export EXTPYTHON_DIST=trusty
 # Release is used to select which tarball to download
-export PYTHON_RELEASE=3.7.3
+export PYTHON_RELEASE=3.6.8
 # Major version no is used in paths and labels (extpython-python${}, /opt/extpython/${}/...)
-export PYTHON_MAJOR=3.7
+export PYTHON_MAJOR=3.6
 # Tarball download URL
 export PYTHON_TARBALL="http://artifact.scc.net.davepedu.com/repo/tar/cpython/cpython/cpython-${PYTHON_RELEASE}.tar.gz"
 # Deps needed to build this package
