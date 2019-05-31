@@ -1,5 +1,7 @@
 #!/bin/bash -eux
 
+# Which dist to build on
+export EXTPYTHON_DIST=bionic
 # Release is used to select which tarball to download
 export PYTHON_RELEASE=3.7.3
 # Major version no is used in paths and labels (extpython-python${}, /opt/extpython/${}/...)

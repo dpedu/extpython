@@ -1,7 +1,8 @@
 #!/usr/bin/make -f
 
 PY3_SRC=./cpython/
-PY3_CONFFLAGS=--prefix=$(DESTDIR)/opt/extpython/_OPT_DIR_ --with-ensurepip=install --enable-optimizations
+PY3_CONFFLAGS=--prefix=$(DESTDIR)/opt/extpython/_OPT_DIR_ --with-ensurepip=install
+#--enable-optimizations
 
 all:
 	cd $(PY3_SRC) && \

@@ -1,5 +1,6 @@
 #!/bin/bash -eux
 
+export EXTPYTHON_DIST=bionic
 export PYTHON_RELEASE=2.7.16
 export PYTHON_MAJOR=2.7
 export PYTHON_TARBALL="http://artifact.scc.net.davepedu.com/repo/tar/cpython/cpython/cpython-${PYTHON_RELEASE}.tar.gz"
