@@ -25,6 +25,7 @@ template /src/debian/control | tee debian/control
 cp /src/debian/compat debian/
 cp /src/debian/rules debian/
 cp /src/Makefile ./
+sed -i -E "s/_OPT_DIR_/${PYTHON_MAJOR}/" Makefile
 
 # build the deb
 time dpkg-buildpackage -us -uc -b
